@@ -42,3 +42,11 @@ Draws a solid shape by filling the path's content area.
 Sets the style used when filling shapes.
 - strokeStyle = color
 Sets the style for shapes' outlines.
+
+
+# Transparency
+### In addition to drawing opaque shapes to the canvas, we can also draw semi-transparent (or translucent) shapes. This is done by either setting the globalAlpha property or by assigning a semi-transparent color to the stroke and/or fill style.
+
+## globalAlpha = transparencyValue
+### Applies the specified transparency value to all future shapes drawn on the canvas. The value must be between 0.0 (fully transparent) to 1.0 (fully opaque). This value is 1.0 (fully opaque) by default.
+### The globalAlpha property can be useful if you want to draw a lot of shapes on the canvas with similar transparency, but otherwise it's generally more useful to set the transparency on individual shapes when setting their colors.
